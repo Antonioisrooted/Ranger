@@ -2,26 +2,31 @@ import org.sql2o.Connection;
 
 import java.util.List;
 
-public class Animal {
-    private int animal_id;
-    private String animal_name;
-    private int animal_age;
+public abstract class Animal {
 
-    public Animal(int animal_id,String animal_name, int animal_age) {
-        this.animal_id = animal_id;
-        this.animal_name = animal_name;
-        this.animal_age = animal_age;
+
+    public String name;
+    public int id;
+    public String type;
+
+    public String getName(){
+        return name;
+    }
+    public int getId(){
+        return id;
+    }
+    public String getType(){
+        return type;
     }
 
-    public int getAnimal_id() {
-        return animal_id;
-    }
 
-    public String getAnimal_name() {
-        return animal_name;
-    }
 
-    public int getAnimal_age() {
-        return animal_age;
+    public List<Sightings> getSightings() {
+        try (Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM sightings WHERE animalid = :id";
+            return con.createQuery(sql)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(Sightings.class);
+        }
     }
 }
