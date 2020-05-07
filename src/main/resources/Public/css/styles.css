@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 body {
-    background: url("/images/background.jpg")
+    background color: purple;
 }
 h1{
     font-family: 'Abril Fatface', cursive;
