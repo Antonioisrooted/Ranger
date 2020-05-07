@@ -1,7 +1,8 @@
 {{#partial "content"}}
+
     <div class="pages">
-        <h2 class="text-center">Non Endangered Animals</h2>
-    {{#if animals}}
+        <h2 class="text-center">Endangered Animals</h2>
+    {{#if endangeredAnimals}}
             <div>
                 <table class="table">
                     <thead>
@@ -9,22 +10,26 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Type</th>
+                        <th>Age</th>
+                        <th>Health</th>
                     </tr>
                     </thead>
-                    {{#each animals }}
+                    {{#each endangeredAnimals}}
                         <tbody>
                         <tr>
                             <td>{{ id }}</td>
                             <td>{{ name }}</td>
                             <td>{{ type }}</td>
+                            <td>{{ age}}</td>
+                            <td>{{ health }}</td>
                         </tr>
                         </tbody>
                     {{/each}}
                 </table>
             </div>
     {{else}}
-            <p>No animal has been recorded. Please add an animal inside the forest.</p>
-            <a href="/animal/form" class="otherbuttons">Add animal</a>
+            <p>No endangered animal! Please add one if it exists</p>
+            <a href="/endangered/form" class="otherbuttons">Add animal</a>
         </div>
     {{/if}}
 {{/partial}}

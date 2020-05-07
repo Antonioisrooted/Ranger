@@ -1,27 +1,9 @@
-{{#partial "title"}}Rangers{{/partial}}
-
 {{#partial "content"}}
-    <div class = "container">
-        <div class="row">
-            <div class="col">
-                <h1 class="display-4">Animals</h1>
-                {{#if animals}}
-                    {{#each animals}}
-                        <div class="alert alert-info">
-                            <p><strong>Name:</strong> {{animal_name}}</p>
-                            <p><strong>Age:</strong> {{animal_age}}</p>
-                            <p><strong>ID:</strong> {{animal_id}}</p>
-                        </div>
-                    {{/each}}
-                {{else}}
-                    <div class="alert alert-danger">
-                        No Animals Added
-                    </div>
-                    <a href="/animal/new" class="btn btn-success">Add Animal</a>
-                {{/if}}
-            </div>
-        </div>
+    <div class="pages">
+        <h2 class="text-center">Wildlife</h2>
+        <p>The animal has been added successfully</p>
+        <a href="/animals" class="otherbuttons">View animals</a>
     </div>
 {{/partial}}
 
-{{> layout.hbs}}
+{{> layout.hbs}}x
