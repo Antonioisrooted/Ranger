@@ -24,5 +24,4 @@ public class Animal {
     public int getAnimal_age() {
         return animal_age;
     }
-
 }
