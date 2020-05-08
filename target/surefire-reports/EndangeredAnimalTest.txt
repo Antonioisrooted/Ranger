@@ -1,40 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: EndangeredAnimalTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 7.652 sec <<< FAILURE! - in EndangeredAnimalTest
-EndangeredAnimal_instanceOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 0.848 sec  <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 7.747 sec <<< FAILURE! - in EndangeredAnimalTest
+EndangeredAnimal_instanceOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 0.808 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-all_returnsAnimalById(EndangeredAnimalTest)  Time elapsed: 1.129 sec  <<< ERROR!
+all_returnsAnimalById(EndangeredAnimalTest)  Time elapsed: 1.151 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-getAge_returnAgeLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.536 sec  <<< ERROR!
+getAge_returnAgeLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.554 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-getName_returnNameOfEndangeredAnimal_cat(EndangeredAnimalTest)  Time elapsed: 0.568 sec  <<< ERROR!
+getName_returnNameOfEndangeredAnimal_cat(EndangeredAnimalTest)  Time elapsed: 0.555 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-all_returnsAllInstancesOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 1.12 sec  <<< ERROR!
+all_returnsAllInstancesOfEndangeredAnimal_true(EndangeredAnimalTest)  Time elapsed: 1.127 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-save_savesEndangeredAnimalInstanceToDB_EndangeredAnimal(EndangeredAnimalTest)  Time elapsed: 1.129 sec  <<< ERROR!
+save_savesEndangeredAnimalInstanceToDB_EndangeredAnimal(EndangeredAnimalTest)  Time elapsed: 1.256 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-equals_returnsTrueIfNamesAreTheSame_true(EndangeredAnimalTest)  Time elapsed: 0.58 sec  <<< ERROR!
+equals_returnsTrueIfNamesAreTheSame_true(EndangeredAnimalTest)  Time elapsed: 0.539 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-id_assignIdToSpecificInstance(EndangeredAnimalTest)  Time elapsed: 1.086 sec  <<< ERROR!
+id_assignIdToSpecificInstance(EndangeredAnimalTest)  Time elapsed: 1.139 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
-getHealth_returnHealthLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.569 sec  <<< ERROR!
+getHealth_returnHealthLevelOfTheAnimal_okay(EndangeredAnimalTest)  Time elapsed: 0.556 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 
