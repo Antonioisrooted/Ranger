@@ -8,14 +8,16 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import static spark.Spark.*;
 
 public class App {
-//    static int getHerokuAssignedPort() {
-//        ProcessBuilder processBuilder = new ProcessBuilder(new String[0]);
-//        return processBuilder.environment().get("PORT") != null ? Integer.parseInt((String)processBuilder.environment().get("PORT")) : 4567;
-//    }
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null)
+        {return Integer.parseInt((String)processBuilder.environment().get("PORT")) ;}
+        return 4567;
+    }
 
     public static void main(String[] args) {
 
-//        Spark.port(getHerokuAssignedPort());
+        Spark.port(getHerokuAssignedPort());
 
         staticFileLocation("/public");
 

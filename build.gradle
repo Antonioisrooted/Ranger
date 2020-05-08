@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group 'Ranger'
+group 'com.moringa.Ranger'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
