@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="NormalAnimalTest" time="4.962" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="NormalAnimalTest" time="4.775" tests="6" errors="6" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
@@ -60,11 +60,11 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="save_savesNormalAnimalInstanceToDB_NormalAnimal" classname="NormalAnimalTest" time="0.973">
+  <testcase name="save_savesNormalAnimalInstanceToDB_NormalAnimal" classname="NormalAnimalTest" time="0.865">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:35 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:33 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -108,7 +108,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:35 PM org.postgresql.Driver connect
+May 08, 2020 2:14:33 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -152,7 +152,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:36 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+May 08, 2020 2:14:33 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -187,7 +187,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:36 PM org.postgresql.Driver connect
+May 08, 2020 2:14:33 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -224,11 +224,11 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 
 ]]></system-err>
   </testcase>
-  <testcase name="all_returnsAllInstancesOfNormalAnimal_true" classname="NormalAnimalTest" time="1.14">
+  <testcase name="all_returnsAllInstancesOfNormalAnimal_true" classname="NormalAnimalTest" time="1.087">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:37 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -272,7 +272,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:37 PM org.postgresql.Driver connect
+May 08, 2020 2:14:34 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -316,7 +316,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:37 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+May 08, 2020 2:14:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -351,7 +351,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:37 PM org.postgresql.Driver connect
+May 08, 2020 2:14:34 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -388,11 +388,11 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 
 ]]></system-err>
   </testcase>
-  <testcase name="NormalAnimal_instanceOfNormalAnimal_true" classname="NormalAnimalTest" time="0.604">
+  <testcase name="NormalAnimal_instanceOfNormalAnimal_true" classname="NormalAnimalTest" time="0.57">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:38 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:35 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -427,7 +427,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:38 PM org.postgresql.Driver connect
+May 08, 2020 2:14:35 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -464,11 +464,11 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 
 ]]></system-err>
   </testcase>
-  <testcase name="getMethods_returnTheRightValues" classname="NormalAnimalTest" time="0.565">
+  <testcase name="getMethods_returnTheRightValues" classname="NormalAnimalTest" time="0.539">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:38 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:36 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -503,7 +503,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:38 PM org.postgresql.Driver connect
+May 08, 2020 2:14:36 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -540,11 +540,11 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 
 ]]></system-err>
   </testcase>
-  <testcase name="equals_returnsTrueIfNamesAreTheSame_true" classname="NormalAnimalTest" time="0.559">
+  <testcase name="equals_returnsTrueIfNamesAreTheSame_true" classname="NormalAnimalTest" time="0.554">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:39 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:36 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -579,7 +579,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:39 PM org.postgresql.Driver connect
+May 08, 2020 2:14:36 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -616,11 +616,11 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 
 ]]></system-err>
   </testcase>
-  <testcase name="id_assignIdToSpecificInstance" classname="NormalAnimalTest" time="1.119">
+  <testcase name="id_assignIdToSpecificInstance" classname="NormalAnimalTest" time="1.153">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;102.166.176.146&quot;, user &quot;oksagxtbqxyuho&quot;, database &quot;d94695gnva3af9&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 </error>
-    <system-err><![CDATA[May 08, 2020 2:08:39 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err><![CDATA[May 08, 2020 2:14:37 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -664,7 +664,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:39 PM org.postgresql.Driver connect
+May 08, 2020 2:14:37 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -708,7 +708,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:40 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+May 08, 2020 2:14:37 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: SQLException occurred while connecting to ec2-34-195-169-25.compute-1.amazonaws.com:5432
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
@@ -743,7 +743,7 @@ org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-May 08, 2020 2:08:40 PM org.postgresql.Driver connect
+May 08, 2020 2:14:37 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "102.166.176.146", user "oksagxtbqxyuho", database "d94695gnva3af9", SSL off
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:473)
