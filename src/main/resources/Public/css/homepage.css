@@ -10,11 +10,6 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-
-li {
-  float: left;
-}
-
 li a {
   display: block;
   padding: 8px;
@@ -80,7 +75,6 @@ ul li ul {
     display: none;
     transition: all 0.5s ease;
 }
-
 ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
