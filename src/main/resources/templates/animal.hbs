@@ -1,7 +1,7 @@
 {{#partial "content"}}
     <div class="pages">
         <h2 class="text-center">Non Endangered Animals</h2>
-    {{#if animals}}
+    {{#if normalAnimals}}
             <div>
                 <table class="table">
                     <thead>
@@ -11,7 +11,7 @@
                         <th>Type</th>
                     </tr>
                     </thead>
-                    {{#each animals }}
+                    {{#each normalAnimals}}
                         <tbody>
                         <tr>
                             <td>{{ id }}</td>

@@ -8,6 +8,8 @@ public abstract class Animal {
     public String name;
     public int id;
     public String type;
+    public String age;
+    public String health;
 
     public String getName(){
         return name;
@@ -18,6 +20,10 @@ public abstract class Animal {
     public String getType(){
         return type;
     }
+    public String getAge(){
+        return age;
+    }
+    public String getHealth(){ return health; }
 
 
 

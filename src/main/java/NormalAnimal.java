@@ -6,10 +6,13 @@ import java.util.Objects;
 public class NormalAnimal extends Animal {
     public static final String DATABASE_TYPE = "Not Endangered";
 
-    public NormalAnimal(String name) {
+    public NormalAnimal(String name, String age, String health) {
         this.name = name;
+        this.age = age;
+        this.health = health;
         type = DATABASE_TYPE;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -21,10 +24,12 @@ public class NormalAnimal extends Animal {
     }
     public void save(){
         try(Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO animals (name,type) VALUES (:name,:type);";
+            String sql = "INSERT INTO animals (name,type,health,age) VALUES (:name,:type,:health,:age);";
             this.id = (int) con.createQuery(sql,true)
                     .addParameter("name",this.name)
                     .addParameter("type",this.type)
+                    .addParameter("health",this.health)
+                    .addParameter("age",this.age)
                     .executeUpdate()
                     .getKey();
         }

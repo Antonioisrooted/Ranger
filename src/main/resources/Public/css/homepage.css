@@ -4,42 +4,21 @@
     margin:0;
     padding: 0;
 }
-.container-fluid{
-    max-width: 100wh;
-    padding: 0px;
-    margin: 0px;
-    height:100vh;
-    background: url(/images/frida-bredesen-LNSIGPuZXIg-unsplash.jpg);
-    background-size: cover;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.navbar{
-    height:80px;
-    background-color:grey;
+
+li {
+  float: left;
 }
-.navbody{
-    float: right;
-    list-style: none;
-    margin-top: 20px;
-    margin-right:60px;
-}
-.navbody li{
-    display: inline-block;
-}
-.navbody a{
-    text-decoration: none;
-    font-family:  sans-serif;;
-    color: #edf0f1;
-    font-size: 18px;
-    cursor: pointer;
-}
-.navbody li a{
-    padding: 10px 40px;
-    transition: all 0.5s ease 0s;
-    position: relative;
-    text-decoration: none;
-}
-.navbody li a:hover{
-    transition: all 0.5s ease 0s;
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
 }
 .content{
     margin: 220px 100px;

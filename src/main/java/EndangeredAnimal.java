@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class EndangeredAnimal  extends Animal{
-    public String health;
-    public String age;
     public static final String DATABASE_TYPE = "Endangered";
 
     public  EndangeredAnimal(String name, String health, String age){
@@ -48,7 +46,7 @@ public class EndangeredAnimal  extends Animal{
         }
     }
 
-    public void save(){        EndangeredAnimal testEndangeredAnimal1 = new EndangeredAnimal("cat","okay","young");
+    public void save(){
 
         try(Connection con = DB.sql2o.open()){
             String sql = "INSERT INTO animals (name,type,health,age) VALUES (:name,:type,:health,:age);";
